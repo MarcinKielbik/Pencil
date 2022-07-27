@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg bg-light" unselectable="on">
+  <div class="container-fluid">
+  <span class="navbar-brand logo"><i class="bi bi-journal-text"></i> Pencil</span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" unselectable="on">
+            File
+          </a>
+          <ul class="dropdown-menu">
+            <button type="button" class="btn btn-light" id="cut-btn" (click)="downloadTxt()">Download txt</button>
+            <li><a class="dropdown-item" href="#">Download pdf</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Print</a></li>
+          </ul>
+        </li>
+        <form class="d-flex">
+
+
+          <button type="button" class="btn btn-light" id="cut-btn" (click)="makeCut()"><i class="bi bi-scissors"></i></button>
+          <button type="button" class="btn btn-light" id="bold-btn" (click)="copy()"><i class="bi bi-clipboard2-plus"></i></button>
+          <!---! <button type="button" class="btn btn-light" id="bold-btn" (click)="paste()"><i class="bi bi-clipboard-fill"></i></button> !--->
+
+          <button type="button" class="btn btn-light" id="cut-btn" (click)="makeItalic()"><i class="bi bi-type-italic"></i></button>
+          <button type="button" class="btn btn-light" id="bold-btn" (click)="makeBold()"><i class="bi bi-type-bold"></i></button>
+          <button type="button" class="btn btn-light" id="bold-btn" (click)="makeunderline()"><i class="bi bi-type-underline"></i></button>
+        <button type="button" class="btn btn-light" id="bold-btn" (click)="removeFormat()">Remove format</button>
+
+        </form>
+
+      </ul>
+    </div>
+  </div>
+</nav>
